@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TripleWhammy" default="default" basedir=".">        
+<!--    <import file="nbproject/build-impl.xml"/> -->
+
+    <taskdef name="jarbundler"
+             classname="net.sourceforge.jarbundler.JarBundler"
+             classpath="jarbundler/jarbundler-2.2.0.jar" />
+
+    <target name="bundle">
+        <jarbundler dir="."
+                    name="Triple Whammy"
+                    mainclass="org.bigclue.TripleWhammy"
+                    jar="target/triple-whammy-1.0-jar-with-dependencies.jar"
+                    icon="triple-whammy.icns"/>
+    </target>
+
+</project>
