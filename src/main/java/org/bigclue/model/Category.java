@@ -117,7 +117,7 @@ public abstract class Category {
 
     @Override
     public int getScore(Dice dice) {
-      boolean qualifies = false;
+      boolean qualifies = minSame == 0; // auto-qualify if minSame is 0
       for (int i = 0; i < Dice.numDice && !qualifies; i++) {
         int numSame = 1;
         for (int j = i + 1; j < Dice.numDice; j++) {
